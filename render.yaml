@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: buddystore-backend
+    env: python
+    buildCommand: ""
+    startCommand: gunicorn app:app
+    envVars:
+      - key: BOT_TOKEN
+        value: your_actual_bot_token_here
